@@ -1,0 +1,108 @@
+.app__navbar-wrapper{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 0.3rem 5rem;
+    box-shadow: 0 0 5px 0 rgb(233, 233, 233);
+    @media screen and (max-width:420px) {
+        padding: 0px 0px;
+    }
+    @media screen and (max-width:840px){
+        padding: 0.3rem 2rem;
+    }
+    @media screen and (min-width:1200px) {
+        padding: 0.3rem 8rem;  
+    }
+}
+.app__navbar-logo{
+    padding:0 3rem;
+    p{
+        font-weight: 600;
+        font-size: 19px;
+    }
+    @media screen and (max-width:420px) {
+        padding: 0px 1rem;
+    }
+    @media screen and (max-width:840px){
+        padding: 0rem 2rem 0rem 1rem;
+    }
+}
+.app__navbar-component{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: flex;
+    position: relative;
+}
+.app__navbar-form {
+    display: flex;
+    position: relative;
+    input{
+        border: 1px solid black;
+        font-size:18px;
+        transition: all 0.3s ease-in;
+        border-radius:15px;
+        padding-left: 10px;
+        &:focus{
+            outline: none;
+        }
+    }
+
+    span{
+        position: absolute;
+        right:4px;
+        bottom: 0px;
+        z-index: 5;
+
+    }
+
+}
+.app__navbar-temp{
+    padding:0.2rem 0;
+    span{
+    padding:6px 11px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    margin-left:3px;
+    cursor: pointer;
+    }
+    .active{
+        background-color: rgb(89, 89, 255);
+
+    }
+}
+.app__navbar-searchWrapper{
+    position: absolute;
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin:2rem 0;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 10px;
+    width: 250px;
+    .app__navbar-searchItem:first-child{
+        padding:0.3rem 1rem 0.5rem 1rem;
+
+    }
+    .app__navbar-searchItem:last-child{
+        border: none;
+    }
+    .app__navbar-searchItem{
+        padding:1rem 1rem 0.5rem 1rem;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+        transition: all 0.4s ease-in;
+        h3{
+            font-weight: 600;
+            padding-bottom: 3px;
+        } 
+        p{
+            color: rgb(110, 110, 110);
+        }
+        &:hover{
+            scale: 1.1;
+        }
+    }
+
+}
